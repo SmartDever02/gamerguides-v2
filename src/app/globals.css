@@ -6,6 +6,41 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --maggenta: #e75971;
+  --ggold: #ffc700;
+  --gg-purple: #611a8b;
+  --link-light: #005eb5;
+  --link-dark: #4bc9ff;
+  --subtext: #818181;
+  --btn-red: #ce1e24;
+  --btn-dark-gray: #565a62;
+  --btn-cyan: #4bc9ff;
+  --nav-inactive-bg-light: #f4f4f4;
+  --nav-inactive-bg-dark: #8e9196;
+  --gray-bg-light: #f4f4f4;
+  --gray-bg-dark: #1b1b1b;
+  --gray-border: #c7c8ca;
+  --pink-active: #fed5d6;
+  --gray-active: var(--nav-inactive-bg-dark);
+  --margin: 1.25rem;
+  --half-margin: 0.625rem;
+  --dbl-margin: 2.5rem;
+  --triple-margin: 3.75rem;
+  --massive-margin: 4.375rem;
+  --neg-half-margin: -0.625rem;
+  --neg-margin: -1.25rem;
+  --rating-bad: hsl(0, 100%, 50%);
+  --rating-poor: hsl(28, 96.4%, 56.5%);
+  --rating-avg: hsl(45, 100%, 60%);
+  --rating-good: hsl(185, 94.9%, 38.8%);
+  --rating-great: hsl(100, 60%, 50%);
+  --very-dark-gray: #40444c;
+  --background: white;
+  --background-dark: #292b2c;
+  --tertiary-gold-default: #ffe9bd;
+  --tertiary-blue-default: #005eb5;
+  --tertiary-green-default: #1c8b1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,12 +53,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+input {
+  outline: none;
 }
 
 @layer utilities {
