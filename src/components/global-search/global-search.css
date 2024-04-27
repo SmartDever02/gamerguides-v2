@@ -1,0 +1,37 @@
+.gg-global-search-form {
+  position: relative;
+  width: 380px;
+}
+
+.gg-global-search-input-label {
+  height: 48px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  transition: all 150ms ease-in;
+}
+
+.gg-global-search-input-label::before {
+  left: -8px;
+  z-index: -10;
+  position: absolute;
+  content: "";
+  background: var(--maggenta);
+  opacity: 0;
+  height: 48px;
+  transition: all 150ms ease-in;
+  width: calc(100% + 16px);
+}
+
+.gg-global-search-input-label:focus-within {
+  margin-right: 32px;
+}
+
+.gg-global-search-input-label:focus-within::before {
+  opacity: 100;
+}
+
+.gg-global-search-input {
+  
+}
